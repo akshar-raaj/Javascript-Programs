@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        
+        //Static variable
+        Person.prototype.count=0;
+        
+        function Person(name,age)
+        {
+            this.name=name;
+            this.age=age;
+            alert("Initialized with "+this.name+" "+this.age);
+            Person.increment_count();
+            alert("Count "+this.count);  //Instance accesses static variable using this
+        }
+        
+        //Instance method
+        Person.prototype.get_name=function()
+        {
+            alert(this.name);
+        }
+        
+        //Static method. Only static methods should act on static variables
+        Person.showCount=function()
+        {
+            alert("Count "+Person.prototype.count);  //Static method uses static variable using prototype property
+        }
+        Person.increment_count=function()
+        {
+            Person.prototype.count+=1;
+        }
+        
+        function useAll()
+        {
+            p1=new Person('abc',12);
+            p2=new Person('def',10)
+            p1.get_name()  //Instance method
+            p2.get_name()
+            Person.showCount()  //Static method
+        }
+        </script>
+        <title>
+            Static and non static
+        </title>
+    </head>
+    <body onload="useAll();">
+    </body>
+</html>

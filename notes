@@ -1,0 +1,12 @@
+Number()
+String()
+Boolean()
+++ works
+document.writeln() doesn't print new line.
+string and array are objects.
+in keyword
+doh.toUpperCase;->function toUpperCase[native code]
+doh.toUpperCase();->DOH
+push,pop and join van be used with arrays
+split,join,charAt,toUpperCase,toLowerCase,slice,indexOf with strings
+r'^wikicamp/(?P<page_name>[^/]+)/$ or /save/$

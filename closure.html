@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        var variable="top";
+        function outer()
+        {
+            var variable="local";
+            function childFunction()
+            {
+                alert(variable);
+            }
+            return childFunction;
+        }
+        var child=outer();
+        child();
+        </script>
+    </head>
+    <body onload=>
+    </body>
+</html>

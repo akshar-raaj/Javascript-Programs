@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        function td()
+        {
+            arr1=[1];
+            arr2=[1,2];
+            arr3=[1,2,3];
+            arr=[];
+            arr.push(arr1);
+            arr.push(arr2);
+            arr.push(arr3);
+            for(i=0;i<arr.length;i++)
+            {
+                ar=arr[i];
+                for(var j=0;j<ar.length;j++)
+                {
+                    document.write(ar[j]+"\t");
+                }
+                document.write("<br/>");
+            }
+        }
+        </script>
+    </head>
+    <body onload="td();">
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        function two_power_ten()
+        {
+            required=Math.pow(2,10);
+            document.writeln("Two power 10 is "+required);
+            //Alternate
+            product=1;
+            iteration=1;
+            while(iteration<=10)
+            {
+                product*=2;
+                iteration++;
+            }
+            document.writeln("Two power 10 is "+required);
+        }
+        </script>
+    </head>
+    <body onload="two_power_ten();">
+    </body>
+</html>
